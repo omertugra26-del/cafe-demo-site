@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toprak & Yaprak | Doğal Bir Mola</title>
+  <style>
+    :root {
+      --green: #294b38;
+      --cream: #f7f2e8;
+      --earth: #b87552;
+      --text: #26352b;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: var(--cream);
+      color: var(--text);
+    }
+
+    header {
+      padding: 24px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--cream);
+    }
+
+    .logo {
+      color: var(--green);
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: var(--green);
+      text-decoration: none;
+      margin-left: 22px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 570px;
+      padding: 75px 7%;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg, rgba(25,49,35,.88), rgba(25,49,35,.2)),
+        url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+      color: white;
+    }
+
+    .hero-content { max-width: 590px; }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font: 12px Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.05;
+      margin: 22px 0;
+      font-weight: normal;
+    }
+
+    .hero p {
+      font: 17px/1.8 Arial, sans-serif;
+      max-width: 470px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 25px;
+      background: var(--earth);
+      color: white;
+      text-decoration: none;
+      font: 14px Arial, sans-serif;
+      border-radius: 3px;
+    }
+
+    section { padding: 75px 7%; }
+
+    .intro {
+      max-width: 760px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      color: var(--green);
+      font-size: clamp(30px, 4vw, 44px);
+      font-weight: normal;
+    }
+
+    .intro p, .card p {
+      font: 15px/1.8 Arial, sans-serif;
+      color: #647066;
+    }
+
+    .menu {
+      background: #eae5d8;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 35px;
+      text-align: left;
+    }
+
+    .card {
+      background: var(--cream);
+      padding-bottom: 22px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card h3 {
+      color: var(--green);
+      font-size: 24px;
+      font-weight: normal;
+      margin: 22px 20px 8px;
+    }
+
+    .card p { margin: 0 20px; }
+
+    .visit {
+      text-align: center;
+      background: var(--green);
+      color: white;
+    }
+
+    .visit h2 { color: var(--cream); }
+    .visit p { font: 15px/1.8 Arial, sans-serif; }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      background: #203b2c;
+      color: #e9e2d5;
+      font: 12px Arial, sans-serif;
+    }
+
+    @media (max-width: 700px) {
+      header { flex-wrap: wrap; gap: 15px; }
+      nav a { margin-left: 0; margin-right: 12px; }
+      .hero { min-height: 500px; }
+      .cards { grid-template-columns: 1fr; }
+      .card img { height: 250px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Toprak & Yaprak</div>
+    <nav>
+      <a href="#hikayemiz">Hikâyemiz</a>
+      <a href="#menu">Menümüz</a>
+      <a href="#ziyaret">Bize Ulaşın</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">Doğallığın kalbinde</div>
+        <h1>Kendine güzel bir mola ver.</h1>
+        <p>Taze kahve, doğal dokular ve telaşsız anlar… Kendini evinde hissedeceğin sıcak bir köşe.</p>
+        <a class="button" href="#menu">Lezzetlerimizi keşfet</a>
+      </div>
+    </div>
+
+    <section id="hikayemiz">
+      <div class="intro">
+        <div class="eyebrow">Bizim küçük dünyamız</div>
+        <h2>Doğadan ilham, her fincanda özen.</h2>
+        <p>Toprak & Yaprak, güzel kahvelerin ve samimi sohbetlerin buluştuğu örnek bir kafe konseptidir. Burada her mola, kendine ayırdığın küçük bir armağan.</p>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="eyebrow">Özenle hazırladık</div>
+      <h2>Favori lezzetler</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Sıcak kahve fincanı">
+          <h3>Günün Kahvesi</h3>
+          <p>Taze çekilmiş kahveyle sade bir mutluluk.</p>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80" alt="Tatlı ve meyveler">
+          <h3>Doğal Tatlılar</h3>
+          <p>Kahvenin yanına eşlik eden tatlı bir mola.</p>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80" alt="Sütlü kahve">
+          <h3>Sütlü Lezzetler</h3>
+          <p>Yumuşak içim, sıcacık bir keyif.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="visit" id="ziyaret">
+      <div class="eyebrow">Bir kahveye ne dersin?</div>
+      <h2>Seni burada görmek güzel olur.</h2>
+      <p>Bu bir demo web sitesidir. Adres ve iletişim bilgileri henüz eklenmedi.</p>
+      <a class="button" href="#anasayfa" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">Başa dön</a>
+    </section>
+  </main>
+
+  <footer>© 2026 Toprak & Yaprak · Örnek kafe web sitesi</footer>
+</body>
+</html>
